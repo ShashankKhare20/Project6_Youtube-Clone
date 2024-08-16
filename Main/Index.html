@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Youtube clone</title>
+</head>
+<body class="h-screen mx-auto">
+    <div class="grid grid-col-[200px_auto]">
+
+        <!-- side navbar -->
+        <div class="flex flex-col h-screen items-center bg-white fixed">
+            <a class="text-3xl flex flex-col items-center mb-8 mt-2" href="#">&#8801</a>
+            <div>
+                <ul class="flex flex-col h-screen items-center w-[70px] bg-white text-[16px] gap-3">
+                    <li><i class="fa-solid fa-house"></i></li>
+                    <span class="text-[10px]">Home</span>
+                    <li><i class="fa-brands fa-square-youtube"></i></li>
+                    <span class="text-[10px]">Shorts</span>
+                    <li><i class="fa-brands fa-youtube"></i></li>
+                    <span class="text-[10px]">Subcriptions</span>
+                    <li><i class="fa-solid fa-compact-disc"></i></li>
+                    <span class="text-[10px]">Youtube mus..</span>
+                    <li><i class="fa-solid fa-play"></i></li>
+                    <span class="text-[10px]">You</span>
+                    <li><i class="fa-solid fa-download"></i></li>
+                    <span class="text-[10px]">Downloads</span>
+                </ul>
+            </div>
+        </div>
+        <!-- side navbar ends here -->
+
+
+        <!-- main section -->
+        <section class="h-screen flex flex-col ml-[70px]">
+
+            <!-- top nav -->
+            <header class="flex items-center justify-between 2xl:h-[8vh] sticky">
+                <div class="mt-[-30px]">
+                    <img class="h-6 w-28 mt-7" src="./img/logo.png" alt="">
+                </div>
+                <div class="mt-[20px]">
+                    <ul class="flex">
+                        <li>
+                            <label for="s" class="border-2 p-3 rounded-full">
+                                <input class=" w-[400px] focus:outline-none p-2 bg-white" type="text" placeholder="Search" name="s" id="1">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </label>
+                        </li>
+                        <li><i class="fa-solid fa-microphone p-2 ml-2 bg-gray-200 rounded-full text-xl"></i></li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="flex gap-10 text-xl">
+                        <li><i class="fa-solid fa-video"></i></li>
+                        <li><i class="fa-regular fa-bell"></i></li>
+                        <li><i class="fa-regular fa-circle-user mr-10"></i></li>
+                    </ul>
+                </div>
+            </header>
+            <!-- top nav ends here -->
+
+            <!-- suggestions -->
+            <header class="ml-4">
+                <ul class="flex overflow-y-auto scroll-auto gap-10 scroll-my-0 mt-3 text-sm font-semibold">
+                    <li class="py-[2px] px-[15px] w-auto bg-black rounded-md text-white">All</li>
+                    <li class="py-[2px] px-[4px] w-auto bg-gray-200 rounded-md">Gaming</li>
+                    <li class="py-[2px] px-[4px] w-auto bg-gray-200 rounded-md">Live</li>
+                    <li class="py-[2px] px-[2px] w-auto bg-gray-200 rounded-md">Music</li>
+                    <li class="py-[2px] px-[2px] w-auto bg-gray-200 rounded-md">Indian Premier League</li>
+                    <li class="py-[2px] px-[2px] w-auto bg-gray-200 rounded-md">Batting</li>
+                    <li class="py-[2px] px-[2px] w-auto bg-gray-200 rounded-md">Mixes</li>
+                    <li class="py-[2px] px-[2px] w-auto bg-gray-200 rounded-md">News</li>
+                    <li class="py-[2px] px-[2px] w-auto bg-gray-200 rounded-md">Disha Vakani</li>
+                    <li class="py-[2px] px-[2px] w-auto bg-gray-200 rounded-md">Indian Pop Music</li>
+                    <li class="py-[2px] px-[2px] w-auto bg-gray-200 rounded-md">Feature Phones</li>
+                    <li class="py-[2px] px-[2px] w-auto bg-gray-200 rounded-md">Battle Grounds Mobile Indian</li>
+                    <li class="py-[2px] px-[2px] w-auto text-sm font-semibold">></li>
+                </ul>
+            </header>
+            <!-- suggestions ends here -->
+
+            <!-- main section  -->
+            <main class="grid grid-cols-4 gap-4 mt-8 ml-4">
+                <div class="w-[300px] h-[250px] bg-white rounded-xl">
+                    <div>
+                        <img class="rounded-xl" src="./img/download.jpeg" alt="thumbnail">
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fa-regular fa-circle-user ml-1 text-xl "></i>
+                        <p class="ml-3 text-sm font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos.</p>
+                    </div>
+                    <div>
+                        <span class="ml-9 text-[12px]">User</span>
+                        <span class="ml-1 text-[12px]">100k views 10 hours ago</span>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[250px] bg-white rounded-xl">
+                    <div>
+                        <img class="rounded-xl" src="./img/download.jpeg" alt="thumbnail">
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fa-regular fa-circle-user ml-1 text-xl "></i>
+                        <p class="ml-3 text-sm font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos.</p>
+                    </div>
+                    <div>
+                        <span class="ml-9 text-[12px]">User</span>
+                        <span class="ml-1 text-[12px]">100k views 10 hours ago</span>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[250px] bg-white rounded-xl">
+                    <div>
+                        <img class="rounded-xl" src="./img/download.jpeg" alt="thumbnail">
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fa-regular fa-circle-user ml-1 text-xl "></i>
+                        <p class="ml-3 text-sm font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos.</p>
+                    </div>
+                    <div>
+                        <span class="ml-9 text-[12px]">User</span>
+                        <span class="ml-1 text-[12px]">100k views 10 hours ago</span>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[250px] bg-white rounded-xl">
+                    <div>
+                        <img class="rounded-xl" src="./img/download.jpeg" alt="thumbnail">
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fa-regular fa-circle-user ml-1 text-xl "></i>
+                        <p class="ml-3 text-sm font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos.</p>
+                    </div>
+                    <div>
+                        <span class="ml-9 text-[12px]">User</span>
+                        <span class="ml-1 text-[12px]">100k views 10 hours ago</span>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[250px] bg-white rounded-xl">
+                    <div>
+                        <img class="rounded-xl" src="./img/download.jpeg" alt="thumbnail">
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fa-regular fa-circle-user ml-1 text-xl "></i>
+                        <p class="ml-3 text-sm font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos.</p>
+                    </div>
+                    <div>
+                        <span class="ml-9 text-[12px]">User</span>
+                        <span class="ml-1 text-[12px]">100k views 10 hours ago</span>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[250px] bg-white rounded-xl">
+                    <div>
+                        <img class="rounded-xl" src="./img/download.jpeg" alt="thumbnail">
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fa-regular fa-circle-user ml-1 text-xl "></i>
+                        <p class="ml-3 text-sm font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos.</p>
+                    </div>
+                    <div>
+                        <span class="ml-9 text-[12px]">User</span>
+                        <span class="ml-1 text-[12px]">100k views 10 hours ago</span>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[250px] bg-white rounded-xl">
+                    <div>
+                        <img class="rounded-xl" src="./img/download.jpeg" alt="thumbnail">
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fa-regular fa-circle-user ml-1 text-xl "></i>
+                        <p class="ml-3 text-sm font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos.</p>
+                    </div>
+                    <div>
+                        <span class="ml-9 text-[12px]">User</span>
+                        <span class="ml-1 text-[12px]">100k views 10 hours ago</span>
+                    </div>
+                </div>
+                <div class="w-[300px] h-[250px] bg-white rounded-xl">
+                    <div>
+                        <img class="rounded-xl" src="./img/download.jpeg" alt="thumbnail">
+                    </div>
+                    <div class="flex mt-2">
+                        <i class="fa-regular fa-circle-user ml-1 text-xl "></i>
+                        <p class="ml-3 text-sm font-semibold">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo, dignissimos.</p>
+                    </div>
+                    <div>
+                        <span class="ml-9 text-[12px]">User</span>
+                        <span class="ml-1 text-[12px]">100k views 10 hours ago</span>
+                    </div>
+                </div>
+            </main>        
+            <!-- main section ends here -->    
+        </section>
+    </div>
+</body>
+</html>
